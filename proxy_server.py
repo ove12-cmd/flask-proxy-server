@@ -3,6 +3,10 @@ import logging
 import requests
 import os
 
+@app.route('/')
+def index():
+    return "Flask Proxy Server is Live!", 200
+
 app = Flask(__name__)
 
 # Configure logging
