@@ -104,5 +104,6 @@ div[style*="display: flex; height: auto; min-height: 100vh; flex-direction: colu
     min-width: 100% !important; /* Ensures that the min-width does not restrict the iframe's width */
 }
 body {
-  overflow: hidden; /* Prevents all scrolling */
+  overflow-x: auto !important; /* Restore horizontal scrolling */
+  overflow-y: hidden; /* Keep vertical scrolling off if needed */
 }
