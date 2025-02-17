@@ -1,11 +1,108 @@
-h1 {
-    color: #ff5722 !important; 
+/* Header Row */
+.kjZ9TBZ8AdQn2eq8Cunh {
+    color: #FFFFFF; /* White text */
+}
+/* Title Banner */
+.Pt5wmorke5X20TtHjFPu {
+    background-color: #fecb2f; /* NYC Yellow */
+    color: #FFFFFF; /* White text */
+    font-weight: bold; /* Emphasize the title */
+}
+/* Pathway Detail Button */
+.AoBerO69GMCENf9XXtI9 {
+    background-color: #FFFFFF !important; /* White */
+}
+/* Logo Box */
+.lslzaxyKOR19JDWpVScs.logowrapper {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #BDC3C7; /* Light border */
+    color: #2C3E50; /* Dark text */
+}
+/* Logo image */
+.ant-col.ant-col-4 img {
+    max-width: unset !important; /* Override the inline max-width */
+    height: 62px; /* Set the desired height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the height */
+}
+/* Pathway Viewer Title - Remove it */
+.W7rK3rAW5ezCZzJs3OLe {
+    display: none;
+}
+/* Course and All Other Cards */
+.tZLT_Xs6KS0BvSj642mP.Qh8U1wqF1UWIfub2qZir {
+    background-color: #71c02e; /* NYC green */
+    color: #FFFFFF; /* White text for contrast */
 }
 
-.Qh8U1wqF1UWIfub2qZir .J1qF8ahXPibtO7ZWapLh {
-    display: flex
-;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 80px;
+/* Credential Cards */
+.tZLT_Xs6KS0BvSj642mP.Bv8uYbDghxKXDXGTUdll {
+    background-color: #b9d2ec; /* NYC blue */
+    color: #FFFFFF; /* White text for contrast */
+}
+/* Remove last 2 blank rows of the pathway. Odd Columns.*/
+div[style*="display: flex; height: auto; min-height: 100vh; flex-direction: column; background-color: rgb(225, 229, 232);"] > div:nth-last-child(-n+2){
+    display: none !important;
+}
+/* Remove last 2 blank rows of the pathway. Even Columns*/
+div[style*="display: flex; height: auto; min-height: 100vh; flex-direction: column; background-color: rgb(243, 244, 246);"] > div:nth-last-child(-n+2) {
+    display: none !important;
+}
+/* Selection Box */
+.ZjKV9TP1p7oW1ogid_pA {
+    background-color: #ECF0F1; /* Soft gray */
+    border: 1px solid #BDC3C7; /* Light border */
+    color: #2C3E50; /* Dark text */
+}
+/* Pathway Viewer Share Button - Remove it */
+.bWw3Vgt6oox6AmIPSBo3.headerright {
+    display: none;
+}
+/* Pathway Viewer Zoom Button - Remove it */
+.zoom-tools {
+    display: none;
+}
+
+/* Control the style of the Pathway Loading Box */
+/* Change the background color of the outer div */
+.aGqneIOAsXOP8Wj_XcP3.VewfUbysz9nokAycX5aZ.dELHt1ZfXDaA3dTIJIMA {
+    background-color: #f0f8ff; /* Light blue */
+}
+/* Change the color of the SVG icons */
+.aGqneIOAsXOP8Wj_XcP3.VewfUbysz9nokAycX5aZ.dELHt1ZfXDaA3dTIJIMA svg {
+    fill: #ff6347; /* Tomato red */
+}
+/* Style the text inside the inner div */
+.amS26DuPNj0b9dF0sziG .BTKdAVxQTz0Wca8qJyre {
+    color: #4caf50; /* Green */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+}
+/* Style the second SVG icon */
+.aGqneIOAsXOP8Wj_XcP3.VewfUbysz9nokAycX5aZ.dELHt1ZfXDaA3dTIJIMA svg:nth-of-type(2) {
+    fill: #1e90ff; /* Dodger blue */
+    cursor: pointer;
+}
+/* Optional: Add padding or margin for better spacing */
+.aGqneIOAsXOP8Wj_XcP3.VewfUbysz9nokAycX5aZ.dELHt1ZfXDaA3dTIJIMA {
+    padding: 10px;
+    margin: 5px;
+}
+/* Responsive MultiCard Width */
+[data-cardtype="multiCard"] {
+    display: flex;
+	flex-direction: column;
+    height: auto;
+    width: 382px !important; /* Custom width. Review for responsiveness */
+    margin: 10px auto; /* Center the card */
+    border-radius: 8px; /* Rounded edges */
+}
+
+.CEPathway {
+	width: 100% !important; /* Ensures that the width is always 100%, overriding other styles */
+    max-width: none !important; /* Ensures that the max-width does not restrict the iframe's width */
+    min-width: 100% !important; /* Ensures that the min-width does not restrict the iframe's width */
+}
+body {
+  overflow: hidden; /* Prevents all scrolling */
 }
